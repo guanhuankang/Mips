@@ -1,0 +1,24 @@
+
+`define ALUSIGNAL_ADDU   5'b10_000
+`define ALUSIGNAL_LW     5'b10_000
+`define ALUSIGNAL_SW     5'b10_000
+`define ALUSIGNAL_JAL    5'b10_000
+
+`define ALUSIGNAL_SUBU   5'b11_000
+`define ALUSIGNAL_BEQ    5'b11_000
+
+`define ALUSIGNAL_OR     5'b11_100
+`define ALUSIGNAL_ORI    5'b11_100
+
+`define ALUSIGNAL_OR     5'b11_100
+`define ALUSIGNAL_AND    5'b11_110
+`define ALUSIGNAL_NOR     5'b11_111
+`define ALUSIGNAL_SLT    5'b10_100
+`define ALUSIGNAL_SLTU     5'b10_100
+`define ALUSIGNAL_ADD    5'b10_000
+`define ALUSIGNAL_JMP    5'b10_000
+
+
+
+
+

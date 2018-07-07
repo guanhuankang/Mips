@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\KK\Single\Top_OExp03_IP2SOC.ncd
+OUTFILE=E:\KK\Single\Top_OExp03_IP2SOC.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lfbg676
+WORKINGDIR=E:\KK\Single
+LICENSE=WebPack
+USER_INFO=__0_0_0

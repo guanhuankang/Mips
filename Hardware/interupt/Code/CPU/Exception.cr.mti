@@ -1,0 +1,211 @@
+F:/Modelsim/lab4/Exception/LSE.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/LSE.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module LSE
+
+Top level modules:
+	LSE
+
+} {} {}} F:/Modelsim/lab4/Exception/IFID.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/IFID.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module IFID
+
+Top level modules:
+	IFID
+
+} {} {}} F:/Modelsim/lab4/Exception/MCU.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/MCU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module MCU
+
+Top level modules:
+	MCU
+
+} {} {}} F:/Modelsim/lab4/Exception/funccode_Def.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/funccode_Def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} F:/Modelsim/lab4/Exception/Instr_Def.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/Instr_Def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} F:/Modelsim/lab4/Exception/Branch.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/Branch.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Branch
+
+Top level modules:
+	Branch
+
+} {} {}} F:/Modelsim/lab4/Exception/ZE.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/ZE.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ZE
+
+Top level modules:
+	ZE
+
+} {} {}} F:/Modelsim/lab4/Exception/Erasure.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/Erasure.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Erasure
+
+Top level modules:
+	Erasure
+
+} {} {}} F:/Modelsim/lab4/Exception/SE.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/SE.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module SE
+
+Top level modules:
+	SE
+
+} {} {}} F:/Modelsim/lab4/Exception/DM.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/DM.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module DM
+
+Top level modules:
+	DM
+
+} {} {}} F:/Modelsim/lab4/Exception/HDU.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/HDU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module HDU
+
+Top level modules:
+	HDU
+
+} {} {}} F:/Modelsim/lab4/Exception/SL2.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/SL2.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module SL2
+
+Top level modules:
+	SL2
+
+} {} {}} F:/Modelsim/lab4/Exception/ALU.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/ALU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} F:/Modelsim/lab4/Exception/ALUCU.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/ALUCU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module ALUCU
+
+Top level modules:
+	ALUCU
+
+} {} {}} F:/Modelsim/lab4/Exception/PC.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/PC.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} F:/Modelsim/lab4/Exception/c0rf.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/c0rf.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module c0rf
+
+Top level modules:
+	c0rf
+
+} {} {}} F:/Modelsim/lab4/Exception/EXMEM.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/EXMEM.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module EXMEM
+
+Top level modules:
+	EXMEM
+
+} {} {}} F:/Modelsim/lab4/Exception/ALUOPCtrl_Def.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/ALUOPCtrl_Def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} F:/Modelsim/lab4/Exception/Mux1Bits.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/Mux1Bits.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Mux1Bits
+-- Compiling module Mux1
+
+Top level modules:
+	Mux1Bits
+	Mux1
+
+} {} {}} F:/Modelsim/lab4/Exception/PipeLine.v {1 {vlog -work work -vopt {F:\Modelsim\lab4\Exception\PipeLine.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module SCPU
+
+Top level modules:
+	SCPU
+
+} {} {}} F:/Modelsim/lab4/Exception/Mux2Bits.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/Mux2Bits.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Mux2Bits
+
+Top level modules:
+	Mux2Bits
+
+} {} {}} F:/Modelsim/lab4/Exception/Mux3Bits.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/Mux3Bits.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module Mux3Bits
+
+Top level modules:
+	Mux3Bits
+
+} {} {}} F:/Modelsim/lab4/Exception/ALUOP_Def.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/ALUOP_Def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+
+} {} {}} F:/Modelsim/lab4/Exception/RF.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/RF.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}} F:/Modelsim/lab4/Exception/MEMWB.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/MEMWB.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module MEMWB
+
+Top level modules:
+	MEMWB
+
+} {} {}} F:/Modelsim/lab4/Exception/SL226.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/SL226.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module SL226
+
+Top level modules:
+	SL226
+
+} {} {}} F:/Modelsim/lab4/Exception/intmodule.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/intmodule.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module intmodule
+
+Top level modules:
+	intmodule
+
+} {} {}} F:/Modelsim/lab4/Exception/IDEX.v {1 {vlog -work work -vopt {F:\Modelsim\lab4\Exception\IDEX.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module IDEX
+
+Top level modules:
+	IDEX
+
+} {} {}} F:/Modelsim/lab4/Exception/MCU_tb.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/MCU_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module MCU_tb
+
+Top level modules:
+	MCU_tb
+
+} {} {}} F:/Modelsim/lab4/Exception/datapath-branch.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/datapath-branch.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module test_branch
+
+Top level modules:
+	test_branch
+
+} {} {}} F:/Modelsim/lab4/Exception/PipeLine_tb.v {1 {vlog -work work -vopt {F:\Modelsim\lab4\Exception\PipeLine_tb.v}
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module pipeline41_tb
+
+Top level modules:
+	pipeline41_tb
+
+} {} {}} F:/Modelsim/lab4/Exception/FU.v {1 {vlog -work work -vopt F:/Modelsim/lab4/Exception/FU.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module FU
+
+Top level modules:
+	FU
+
+} {} {}}

@@ -1,0 +1,13 @@
+一、这是一个Mips处理器设计实验，包括 单周期，多周期，流水线（5级），流水线中断版 处理器。
+
+
+二、单周期可以执行指定9条指令，MIPS-Lite1＝{addu，subu，ori，lw，sw，beq，jal，and，nor}。
+多周期处理器应支持MIPS-C2指令集。MIPS-C2＝{LB、LBU、LH、LHU、LW、SB、SH、SW、ADD、ADDU、SUB、SUBU、SLL、SRL、SRA、SLLV、SRLV、SRAV、AND、OR、XOR、NOR、SLT、SLTU、ADDI、ADDIU、ANDI、ORI、XORI、LUI、SLTI、SLTIU、BEQ、BNE、BLEZ、BGTZ、BLTZ、BGEZ、J、JAL、JALR、JR}流水线也支持MIPS-C2指令集。
+中断版本在流水线基础上增加了syscall，mtc0,mfc0,eret四条指令。
+Huankang Guan Email：2659814334@qq.com
+
+
+
+Code By HuankangGuan
+
+

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALU.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUOPCtrl_Def.v&apos; in file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALU.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUCU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUCU.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUOP_Def.v&apos; in file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUCU.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUCU.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUOPCtrl_Def.v&apos; in file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUCU.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUCU.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/funccode_Def.v&apos; in file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUCU.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/Branch.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/DM.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/EXMEM.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/Erasure.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/FU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/HDU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/HDU.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/Instr_Def.v&apos; in file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/HDU.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/IDEX.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/IFID.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/IM.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/LSE.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/MCU.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/MCU.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ALUOP_Def.v&apos; in file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/MCU.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/MCU.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/Instr_Def.v&apos; in file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/MCU.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/MEMWB.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/Mux1Bits.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/Mux2Bits.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/Mux3Bits.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/PC.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/PipeLine.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/RF.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/SE.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/SL2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/SL226.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/ZE.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/c0rf.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/datapath-branch.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/CPU/intmodule.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/IO/Counter_3_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/IO/MIO_BUS_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/IO/Multi_8CH32_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/IO/SAnti_jitter_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/IO/SEnter_2_32_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/IO/SPIO_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/IO/SSeg7_Dev_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/IO/clk_div.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/GuanHuankang/Desktop/COAD/ComputerOrganizationandDesign/Hardware/interupt/Code/main.v&quot; into library work</arg>
+</msg>
+
+</messages>
+

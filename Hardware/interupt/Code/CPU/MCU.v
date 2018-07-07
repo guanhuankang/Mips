@@ -1,0 +1,281 @@
+// Mian Control Unit
+`include "ALUOP_Def.v"
+`include "Instr_Def.v"
+
+module MCU(instr, WB, M, EX, EXCE);
+  input[31:0] instr;
+  output[34:0] EXCE;
+  output WB,M,EX;
+  wire[4:0] WB;
+  wire[9:0] M;
+  wire[9:0] EX;
+  
+  //WB
+  reg RegWrite;
+  reg MemToReg;
+  reg[2:0] SLSE;
+  //M
+  reg[2:0] BranchSign;
+  reg[1:0] JMSign;
+  reg DVSign;
+  reg MemRead;
+  reg MemWrite;
+  reg[1:0] SaveSign;
+  //EX
+  reg ALUSrcA;
+  reg[1:0] ALUSrcB;
+  reg[4:0] ALUOP;
+  reg[1:0] RegDst;
+  
+  //EXCE {mfc0,mtc0,eret,INT32} = {34,33,32,31:0}
+  wire mfc0,mtc0,eret,syscall;
+  reg Unimplent;
+  wire[31:0] INT32;
+  assign eret = instr==32'h42000018;
+  assign mfc0 = instr[31:21]==11'd512;
+  assign mtc0 = instr[31:21]==11'd516;
+  assign syscall = instr==32'd12;
+  assign INT32 = {29'd0,Unimplent,syscall,1'd0};
+  
+  wire[5:0] idcode = instr[31:26];
+  wire[5:0] funccode = instr[5:0];
+  
+  wire RTBit = instr[16];
+  reg[2:0] branchTmp;
+  reg[5:0] jalrjr;//Note
+  
+  //set WB,M,EX
+  assign WB = {RegWrite,MemToReg,SLSE};
+  assign M =  {jalrjr,MemRead,MemWrite,SaveSign};
+  assign EX = {ALUSrcA,ALUSrcB,ALUOP,RegDst};
+  assign EXCE = {mfc0,mtc0,eret,INT32};
+  
+  always@(*)
+  begin
+    case(idcode)
+      `Instr_LB,
+      `Instr_LH,
+      `Instr_LW,
+      `Instr_LBU,
+      `Instr_LHU:
+       begin
+         RegWrite = 1;//WB
+         MemToReg = 1;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = 3'b000;//M
+         JMSign = 2'b00;//M
+         DVSign = 0;//M
+         MemRead = 1;//M
+         MemWrite = 0;//M
+         SaveSign = 2'b00;//M
+         ALUSrcA = 0;//EX
+         ALUSrcB = 2'b10;//EX
+         ALUOP = `ALUOP_Load;//EX
+         RegDst = 2'b00;//EX
+		 Unimplent = 1'd0;
+       end
+      
+      `Instr_SB,
+      `Instr_SH,
+      `Instr_SW:
+       begin
+         RegWrite = 0;//WB
+         MemToReg = 0;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = 3'b000;//M
+         JMSign = 2'b00;//M
+         DVSign = 0;//M
+         MemRead = 0;//M
+         MemWrite = 1;//M
+         SaveSign = idcode[1:0];//M
+         ALUSrcA = 0;//EX
+         ALUSrcB = 2'b10;//EX
+         ALUOP = `ALUOP_Store;//EX
+         RegDst = 2'b00;//EX
+		 Unimplent = 1'd0;
+       end
+       
+       `Instr_R_Type:
+       begin
+         RegWrite = 1;//WB
+         MemToReg = 0;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = 3'b000;//M
+         JMSign = 2'b00;//M
+         DVSign = 0;//M
+         MemRead = 0;//M
+         MemWrite = 0;//M
+         SaveSign = 2'b00;//M
+         ALUSrcA = ~(funccode[5]|funccode[4]|funccode[3]|funccode[2]);//EX
+         ALUSrcB = 2'b00;//EX
+         ALUOP = `ALUOP_R_Type;//EX
+         RegDst = 2'b01;//EX
+		 Unimplent = 1'd0;
+       end
+	   
+	   `Instr_MFC0,
+	   `Instr_MTC0,
+	   `Instr_ERET:
+	   begin
+         RegWrite = instr[25:21]==5'd0;//WB
+         MemToReg = 0;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = 3'b000;//M
+         JMSign = 2'b00;//M
+         DVSign = 0;//M
+         MemRead = 0;//M
+         MemWrite = 0;//M
+         SaveSign = 2'b00;//M
+         ALUSrcA = ~(funccode[5]|funccode[4]|funccode[3]|funccode[2]);//EX
+         ALUSrcB = 2'b00;//EX
+         ALUOP = `ALUOP_R_Type;//EX
+         RegDst = 2'b00;//EX
+		 Unimplent = 1'd0;
+	   end
+	   
+      `Instr_ADDI,
+      `Instr_ADDUI,
+      `Instr_SLTI,
+      `Instr_SLTUI,
+      `Instr_ANDI,
+      `Instr_XORI,
+      `Instr_ORI,
+      `Instr_LUI:
+       begin
+         RegWrite = 1;//WB
+         MemToReg = 0;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = 3'b000;//M
+         JMSign = 2'b00;//M
+         DVSign = 0;//M
+         MemRead = 0;//M
+         MemWrite = 0;//M
+         SaveSign = 2'b00;//M
+         ALUSrcA = 0;//EX
+         ALUSrcB = {1'b1,{1{~(idcode==6'd8||idcode==6'd10||idcode==6'd15||idcode==6'd9||idcode==6'd11)}}};//EX
+         ALUOP = idcode[4:0];//EX
+         RegDst = 2'b00;//EX
+		 Unimplent = 1'd0;
+       end
+       
+      `Instr_BEQ,
+      `Instr_BNE,
+      `Instr_BLEZ,
+      `Instr_BGTZ,
+      `Instr_BLTZ,
+      `Instr_BGEZ:
+       begin
+         RegWrite = 0;//WB
+         MemToReg = 0;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = branchTmp;//M
+         JMSign = 2'b00;//M
+         DVSign = 0;//M
+         MemRead = 0;//M
+         MemWrite = 0;//M
+         SaveSign = 2'b00;//M
+         ALUSrcA = 0;//EX
+         ALUSrcB = {1'b0,{1{~(idcode==6'd4 || idcode==6'd5)}}};//EX
+         if(RTBit==1 && idcode==`Instr_BGEZ)//EX
+           ALUOP = `ALUOP_Bgez;
+         else
+           ALUOP = idcode[4:0];
+         RegDst = 2'b00;//EX
+		 Unimplent = 1'd0;
+       end
+       
+       `Instr_J:
+       begin
+         RegWrite = 0;//WB
+         MemToReg = 0;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = branchTmp;//M
+         JMSign = 2'b01;//M
+         DVSign = 0;//M
+         MemRead = 0;//M
+         MemWrite = 0;//M
+         SaveSign = 2'b00;//M
+         ALUSrcA = 0;//EX
+         ALUSrcB = 0;//EX
+         ALUOP = `ALUOP_J;//EX
+         RegDst = 2'b00;//EX
+		 Unimplent = 1'd0;
+       end
+       
+       `Instr_JAL:
+       begin
+         RegWrite = 1;//WB
+         MemToReg = 0;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = branchTmp;//M
+         JMSign = 2'b01;//M
+         DVSign = 1;//M
+         MemRead = 0;//M
+         MemWrite = 0;//M
+         SaveSign = 2'b00;//M
+         ALUSrcA = 0;//EX
+         ALUSrcB = 0;//EX
+         ALUOP = `ALUOP_JAL;//EX
+         RegDst = 2'b10;//EX
+		 Unimplent = 1'd0;
+       end
+	   
+	   default:
+	   begin
+         RegWrite = 0;//WB
+         MemToReg = 0;//WB
+         SLSE = idcode[2:0];//WB
+         BranchSign = 3'b000;//M
+         JMSign = 2'b00;//M
+         DVSign = 0;//M
+         MemRead = 0;//M
+         MemWrite = 0;//M
+         SaveSign = 2'b00;//M
+         ALUSrcA = ~(funccode[5]|funccode[4]|funccode[3]|funccode[2]);//EX
+         ALUSrcB = 2'b00;//EX
+         ALUOP = `ALUOP_R_Type;//EX
+         RegDst = 2'b01;//EX
+		 Unimplent = 1'd1;
+	   end
+    endcase
+  end
+  
+  always@(*)
+  begin
+    case(idcode)
+      `Instr_BEQ:
+        branchTmp = 3'b100;
+      `Instr_BNE:
+        branchTmp =3'b101;
+      `Instr_BLEZ,
+      `Instr_BGTZ,
+      `Instr_BLTZ,
+      `Instr_BGEZ:
+        branchTmp = 3'b110;
+      `Instr_J,
+      `Instr_JAL,
+      `Instr_JALR,
+      `Instr_JR:
+        branchTmp = 3'b111;
+      default:
+        branchTmp = 3'b000;
+    endcase
+  end
+  
+  always@(*)
+  begin
+    //include Instr_JALR
+    if(idcode==`Instr_JALR && (funccode==6'd8||funccode==6'd9))
+      //Branch JM DV 3.2.1
+      begin
+      jalrjr = 6'b111_10_1;
+      //$display("JALR-%x",jalrjr);
+      end
+    else
+      begin
+      jalrjr = {BranchSign,JMSign,DVSign};
+      //$display("JALR-%x",jalrjr);
+      end
+  end
+  
+endmodule
